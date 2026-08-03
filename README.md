@@ -2,6 +2,10 @@
 
 A lightweight, responsive personal academic website built with plain HTML, CSS, and JavaScript. The design is inspired by the clarity and information hierarchy of traditional faculty websites while using original styling and code.
 
+## Live site
+
+`https://asphadke.github.io/`
+
 ## Local preview
 
 ```bash
