@@ -194,8 +194,8 @@ h3 {
 
 .portrait-wrap {
   position: relative;
-  width: min(100%, 260px);
-  aspect-ratio: 1;
+  width: min(100%, 280px);
+  aspect-ratio: 4 / 5;
   margin-top: 0.55rem;
 }
 
@@ -221,6 +221,7 @@ h3 {
 .portrait {
   z-index: 2;
   object-fit: cover;
+  object-position: center;
   background: #dce5e7;
 }
 
@@ -600,7 +601,7 @@ h3 {
   }
 
   .portrait-wrap {
-    width: 170px;
+    width: 180px;
   }
 
   .research-item {
@@ -661,3 +662,4 @@ h3 {
     animation-iteration-count: 1 !important;
   }
 }
+
