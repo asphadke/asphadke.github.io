@@ -251,15 +251,15 @@ h3 {
 }
 
 .intro-copy {
-  max-width: 760px;
+  max-width: 820px;
   margin-bottom: 1.25rem;
-  color: var(--ink);
-  font-family: inherit;
-  font-size: 1rem;
-  line-height: 1.7;
+  color: #344048;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.27rem, 2.2vw, 1.65rem);
+  line-height: 1.5;
 }
 
-.hero-copy > p:not(.eyebrow):not(.lead) {
+.hero-copy > p:not(.eyebrow):not(.lead):not(.intro-copy) {
   max-width: 760px;
   color: var(--muted);
 }
