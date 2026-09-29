@@ -250,6 +250,15 @@ h3 {
   line-height: 1.5;
 }
 
+.intro-copy {
+  max-width: 760px;
+  margin-bottom: 1.25rem;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
 .hero-copy > p:not(.eyebrow):not(.lead) {
   max-width: 760px;
   color: var(--muted);
