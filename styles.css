@@ -188,7 +188,8 @@ h3 {
   grid-template-columns: minmax(180px, 0.58fr) minmax(0, 2fr);
   align-items: start;
   gap: clamp(2.5rem, 6vw, 5.5rem);
-  padding-block: clamp(4.5rem, 9vw, 8.5rem) clamp(2.5rem, 5vw, 4rem);
+  padding-top: clamp(4.5rem, 9vw, 8.5rem);
+  padding-bottom: clamp(0.75rem, 1.5vw, 1.25rem);
   border-bottom: 0;
 }
 
@@ -280,7 +281,7 @@ h3 {
 /* Full-width content below the About section */
 .content-grid {
   display: block;
-  padding-top: clamp(1.75rem, 3vw, 2.75rem);
+  padding-top: 0;
 }
 
 .main-column {
