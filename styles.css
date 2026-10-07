@@ -280,6 +280,7 @@ h3 {
 /* Full-width content below the About section */
 .content-grid {
   display: block;
+  padding-top: clamp(4.5rem, 7vw, 6.5rem);
 }
 
 .main-column {
@@ -287,9 +288,12 @@ h3 {
   min-width: 0;
 }
 
-/* Section headings */
 .section {
-  padding-bottom: clamp(4.5rem, 8vw, 7rem);
+  padding-bottom: clamp(5rem, 8vw, 7rem);
+}
+
+.section:last-child {
+  padding-bottom: 0;
 }
 
 .section-heading {
@@ -311,11 +315,12 @@ h3 {
 
 /* Projects: simple editorial list, no cards */
 .project-list {
+  width: 100%;
   border-top: 1px solid var(--line);
 }
 
 .project {
-  padding: 2rem 0 2.2rem;
+  padding: 2.1rem 0 2.25rem;
   border: 0;
   border-bottom: 1px solid var(--line);
   border-radius: 0;
@@ -333,33 +338,33 @@ h3 {
 .project-meta {
   display: flex;
   justify-content: space-between;
-  gap: 1.5rem;
+  align-items: baseline;
+  gap: 2rem;
   margin-bottom: 0.7rem;
   color: var(--warm);
 }
 
 .project h3 {
-  max-width: 900px;
-  margin-bottom: 0.6rem;
+  max-width: 1000px;
+  margin-bottom: 0.55rem;
   font-size: 1.35rem;
 }
 
 .project p {
-  max-width: 900px;
-  margin-bottom: 0.75rem;
+  max-width: 1000px;
+  margin-bottom: 0.65rem;
   color: var(--muted);
 }
 
 .project-links {
-  margin: 0.45rem 0 0;
+  margin: 0.4rem 0 0;
 }
 
-/* Tags become simple text rather than pills */
 .tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0;
-  margin: 0.8rem 0 0;
+  margin: 0.75rem 0 0;
   padding: 0;
   list-style: none;
 }
@@ -375,108 +380,37 @@ h3 {
 }
 
 .tags li:not(:last-child)::after {
-  content: " · ";
-  margin: 0 0.45rem;
-  color: var(--line);
+  content: "·";
+  margin-inline: 0.5rem;
+  color: #a4a9ac;
 }
 
-/* Keep background full-width too */
+/* Background */
 .timeline {
   width: 100%;
   border-top: 1px solid var(--line);
 }
 
-/* Sidebar/contact card no longer needed */
-.side-column,
-.connect-card {
-  display: none;
-}
-.side-section {
-  padding-block: 1.4rem 2rem;
-  border-top: 2px solid var(--ink);
+.timeline-item {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.28fr) minmax(0, 1fr);
+  gap: 2rem;
+  padding: 1.8rem 0;
+  border-bottom: 1px solid var(--line);
 }
 
-.side-section + .side-section {
-  margin-top: 2.2rem;
-}
-
-.side-section h2 {
-  margin-bottom: 1.15rem;
-  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.86rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.news-list article {
-  padding-block: 0.1rem 1.25rem;
-}
-
-.news-list article + article {
-  padding-top: 1.2rem;
-  border-top: 1px solid var(--line);
-}
-
-.news-list time {
-  display: block;
-  margin-bottom: 0.28rem;
+.timeline-date {
+  margin-bottom: 0;
   color: var(--warm);
 }
 
-.news-list p,
-.side-section > p {
+.timeline-item h3 {
+  margin-bottom: 0.25rem;
+}
+
+.timeline-item div p {
   margin-bottom: 0;
   color: var(--muted);
-  font-size: 0.94rem;
-  line-height: 1.6;
-}
-
-.plain-list {
-  display: grid;
-  gap: 0.45rem;
-  margin: 0;
-  padding: 0;
-  color: var(--muted);
-  list-style: none;
-}
-
-.plain-list li::before {
-  content: "—";
-  margin-right: 0.55rem;
-  color: var(--warm);
-}
-
-.connect-card {
-  padding: 1.5rem;
-  border-top: 0;
-  background: var(--accent-deep);
-  color: #fff;
-}
-
-.connect-card h2,
-.connect-card p {
-  color: #fff;
-}
-
-.connect-card p {
-  opacity: 0.84;
-}
-
-.button-link {
-  display: inline-block;
-  margin-top: 1.2rem;
-  padding: 0.52rem 0.78rem;
-  border: 1px solid rgba(255, 255, 255, 0.42);
-  color: #fff;
-  font-size: 0.82rem;
-  font-weight: 750;
-  text-decoration: none;
-}
-
-.button-link:hover {
-  background: #fff;
-  color: var(--accent-deep);
 }
 
 .site-footer {
