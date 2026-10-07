@@ -356,13 +356,25 @@ h3 {
   font-size: 1.35rem;
 }
 
-.project h3 a {
+.project-title-link {
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
   color: var(--ink);
-  text-decoration: none;
+  cursor: pointer;
+  pointer-events: auto !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(33, 93, 118, 0.35);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 
-.project h3 a:hover {
+.project-title-link:hover,
+.project-title-link:focus-visible {
   color: var(--accent);
+  text-decoration-color: currentColor;
 }
 
 /* Project detail pages */
