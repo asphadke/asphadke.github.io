@@ -697,3 +697,10 @@ h3 {
     animation-iteration-count: 1 !important;
   }
 }
+
+.tags,
+.project-detail-tags,
+.project-meta,
+.project-detail-meta {
+  display: none;
+}
