@@ -269,6 +269,21 @@ h3 {
   color: var(--muted);
 }
 
+.hero-full-width-copy {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.hero-full-width-copy p {
+  max-width: none;
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+.hero-full-width-copy p:last-child {
+  margin-bottom: 0;
+}
+
 .intro-heading {
   display: flex;
   align-items: center;
