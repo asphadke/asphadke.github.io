@@ -197,10 +197,7 @@ h3 {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(180px, 0.58fr) minmax(0, 2fr);
-  align-items: start;
-  gap: 2rem;
+  display: flow-root;
   padding-top: 2rem;
   padding-bottom: clamp(0.75rem, 1.5vw, 1.25rem);
   border-bottom: 0;
@@ -208,9 +205,11 @@ h3 {
 
 .portrait-wrap {
   position: relative;
-  width: min(100%, 280px);
+  float: left;
+  width: 180px;
+  max-width: 100%;
   aspect-ratio: 4 / 5;
-  margin-top: 0.55rem;
+  margin: 0.55rem 2rem 1rem 0;
 }
 
 .portrait,
@@ -265,7 +264,7 @@ h3 {
 }
 
 .hero-copy > p:not(.eyebrow):not(.lead) {
-  max-width: 760px;
+  max-width: none;
   color: var(--muted);
 }
 
@@ -650,13 +649,9 @@ h3 {
     transform: translateY(-7px) rotate(-45deg);
   }
 
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
   .portrait-wrap {
-    width: 180px;
+    float: none;
+    margin: 0.55rem 0 1.5rem;
   }
 
   .research-item {
@@ -793,4 +788,8 @@ h3 {
   font-size: clamp(1.9rem, 3.6vw, 2.25rem);
   line-height: 1.15;
   letter-spacing: -0.025em;
+}
+
+.hero-copy .research-interests {
+  font-weight: 700;
 }
