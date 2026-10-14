@@ -849,3 +849,67 @@ h3 {
     font-size: 0.6rem;
   }
 }
+
+.project-image-link {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.65rem;
+  cursor: zoom-in;
+}
+
+.project-image-link img {
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.project-image-link span {
+  display: block;
+  padding: 0.35rem;
+}
+
+.image-viewer {
+  width: min(1100px, calc(100% - 2rem));
+  max-width: none;
+  max-height: calc(100dvh - 2rem);
+  padding: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.image-viewer::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.image-viewer form {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.image-viewer-close {
+  min-height: 44px;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.image-viewer > img {
+  width: 100%;
+  height: auto;
+  max-height: calc(100dvh - 7rem);
+  object-fit: contain;
+}
+
+body:has(.image-viewer[open]) {
+  overflow: hidden;
+}

@@ -1,4 +1,24 @@
 (() => {
+  const imageLink = document.querySelector('.project-image-link');
+  const imageViewer = document.querySelector('.image-viewer');
+
+  if (imageLink && imageViewer && typeof imageViewer.showModal === 'function') {
+    imageLink.addEventListener('click', (event) => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      imageViewer.showModal();
+    });
+
+    imageViewer.addEventListener('click', (event) => {
+      const bounds = imageViewer.getBoundingClientRect();
+      if (event.target === imageViewer &&
+          (event.clientX < bounds.left || event.clientX > bounds.right ||
+           event.clientY < bounds.top || event.clientY > bounds.bottom)) {
+        imageViewer.close();
+      }
+    });
+  }
+
   const menuButton = document.querySelector('.menu-button');
   const nav = document.querySelector('#site-nav');
   const navLinks = [...document.querySelectorAll('#site-nav a')];
