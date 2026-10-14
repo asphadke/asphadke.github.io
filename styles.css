@@ -269,12 +269,37 @@ h3 {
   color: var(--muted);
 }
 
+.intro-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.intro-heading h1 {
+  margin-bottom: 0;
+}
+
 .contact-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem 1.35rem;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 0;
+}
+
+.contact-links a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+}
+
+.contact-links svg {
+  display: block;
+  width: 22px;
+  height: 22px;
 }
 
 .contact-links a,
@@ -764,7 +789,7 @@ h3 {
 }
 
 .hero-copy h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   font-size: clamp(1.9rem, 3.6vw, 2.25rem);
   line-height: 1.15;
   letter-spacing: -0.025em;
