@@ -396,10 +396,20 @@ h3 {
   font-size: 1.2rem;
 }
 
+.project-season {
+  display: inline-block;
+  margin-left: 0.4rem;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
 .project-title-link {
   position: relative;
   z-index: 10;
-  display: block;
+  display: inline;
   width: fit-content;
   max-width: 100%;
   color: var(--ink);
