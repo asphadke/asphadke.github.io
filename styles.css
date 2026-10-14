@@ -264,16 +264,7 @@ h3 {
   line-height: 1.5;
 }
 
-.intro-copy {
-  max-width: 820px;
-  margin-bottom: 1.25rem;
-  color: var(--ink);
-  font-family: inherit;
-  font-size: clamp(1.35rem, 2.25vw, 1.68rem);
-  line-height: 1.45;
-}
-
-.hero-copy > p:not(.eyebrow):not(.lead):not(.intro-copy) {
+.hero-copy > p:not(.eyebrow):not(.lead) {
   max-width: 760px;
   color: var(--muted);
 }
@@ -770,4 +761,11 @@ h3 {
   .header-inner {
     gap: 0.5rem;
   }
+}
+
+.hero-copy h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
 }
