@@ -29,7 +29,7 @@ body {
   color: var(--ink);
   font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 17px;
-  line-height: 1.7;
+  line-height: 1.6;
   text-rendering: optimizeLegibility;
 }
 
@@ -140,7 +140,7 @@ h3 {
 }
 
 .header-inner {
-  min-height: 76px;
+  min-height: 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -197,7 +197,7 @@ h3 {
   grid-template-columns: minmax(180px, 0.58fr) minmax(0, 2fr);
   align-items: start;
   gap: clamp(2.5rem, 6vw, 5.5rem);
-  padding-top: clamp(4.5rem, 9vw, 8.5rem);
+  padding-top: clamp(2rem, 4vw, 3.5rem);
   padding-bottom: clamp(0.75rem, 1.5vw, 1.25rem);
   border-bottom: 0;
 }
@@ -278,7 +278,8 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem 1.35rem;
-  margin-top: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact-links a,
@@ -308,10 +309,10 @@ h3 {
 
 .section-heading {
   display: grid;
-  grid-template-columns: 2.8rem 1fr;
-  align-items: baseline;
-  gap: 1rem;
-  margin-bottom: 2.4rem;
+  grid-template-columns: 1.5rem 1fr;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.1rem;
 }
 
 .section-heading h2,
@@ -321,6 +322,17 @@ h3 {
 
 .section-number {
   color: var(--warm);
+}
+
+.section-icon {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--warm);
+}
+
+#projects {
+  margin-inline: clamp(0rem, calc((100vw - 700px) * 0.07), 3rem);
 }
 
 #projects #projects-title {
@@ -335,7 +347,7 @@ h3 {
 }
 
 .project {
-  padding: 2.1rem 0 2.25rem;
+  padding: 1.15rem 0 1.25rem;
   border: 0;
   border-bottom: 1px solid var(--line);
   border-radius: 0;
@@ -355,13 +367,13 @@ h3 {
   justify-content: space-between;
   align-items: baseline;
   gap: 2rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.4rem;
   color: var(--warm);
 }
 
 .project h3 {
   max-width: 1000px;
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.35rem;
   font-size: 1.35rem;
 }
 
@@ -388,7 +400,7 @@ h3 {
 
 /* Project detail pages */
 .project-page {
-  padding-block: clamp(3.5rem, 7vw, 6rem);
+  padding-block: clamp(2rem, 4vw, 3.5rem);
 }
 
 .project-detail {
@@ -454,8 +466,8 @@ h3 {
 
 .project-detail-section {
   max-width: 820px;
-  margin-top: 3rem;
-  padding-top: 2rem;
+  margin-top: 2rem;
+  padding-top: 1.25rem;
   border-top: 1px solid var(--line);
 }
 
@@ -469,7 +481,7 @@ h3 {
 
 .project p {
   max-width: 1000px;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.4rem;
   color: var(--muted);
 }
 
@@ -481,7 +493,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 0;
-  margin: 0.75rem 0 0;
+  margin: 0.45rem 0 0;
   padding: 0;
   list-style: none;
 }
@@ -536,7 +548,7 @@ h3 {
 }
 
 .footer-inner {
-  min-height: 112px;
+  min-height: 88px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -620,7 +632,7 @@ h3 {
 
   .hero {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
 
   .portrait-wrap {
@@ -655,7 +667,7 @@ h3 {
   }
 
   .section-heading {
-    grid-template-columns: 2rem 1fr;
+    grid-template-columns: 1.5rem 1fr;
     gap: 0.5rem;
   }
 
