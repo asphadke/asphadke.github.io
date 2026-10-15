@@ -1,12 +1,19 @@
 (() => {
-  const imageLink = document.querySelector('.project-image-link');
+  const imageLinks = document.querySelectorAll('.project-image-link');
   const imageViewer = document.querySelector('.image-viewer');
 
-  if (imageLink && imageViewer && typeof imageViewer.showModal === 'function') {
-    imageLink.addEventListener('click', (event) => {
-      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-      event.preventDefault();
-      imageViewer.showModal();
+  if (imageLinks.length && imageViewer && typeof imageViewer.showModal === 'function') {
+    imageLinks.forEach((imageLink) => {
+      imageLink.addEventListener('click', (event) => {
+        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        const thumbnail = imageLink.querySelector('img');
+        const enlargedImage = imageViewer.querySelector('img');
+        enlargedImage.src = imageLink.href;
+        enlargedImage.alt = thumbnail.alt;
+        imageViewer.setAttribute('aria-label', thumbnail.alt);
+        imageViewer.showModal();
+      });
     });
 
     imageViewer.addEventListener('click', (event) => {
