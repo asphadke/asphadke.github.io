@@ -943,7 +943,7 @@ body:has(.image-viewer[open]) {
   text-transform: none;
 }
 
-#background .education-item {
-  padding-inline: 1rem;
-  background: var(--accent-soft);
+#background .education-item h3,
+#background .education-item p {
+  color: var(--accent);
 }
