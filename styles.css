@@ -943,7 +943,15 @@ body:has(.image-viewer[open]) {
   text-transform: none;
 }
 
-#background .education-item h3,
-#background .education-item p {
+#background .education-item {
+  padding-inline: 1rem;
+  background: var(--accent-soft);
+}
+
+.degree-note {
+  margin-left: 0.4rem;
   color: var(--accent);
+  font-size: 0.8rem;
+  font-style: italic;
+  white-space: nowrap;
 }
