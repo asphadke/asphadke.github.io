@@ -942,3 +942,8 @@ body:has(.image-viewer[open]) {
   letter-spacing: normal;
   text-transform: none;
 }
+
+#background .education-item {
+  padding-inline: 1rem;
+  background: var(--accent-soft);
+}
